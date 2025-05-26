@@ -1,0 +1,150 @@
+.heroContainer {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  margin: 60px auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.third {
+  display: flex;
+  gap: 15px;
+}
+
+.textOne {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 25%;
+  left: 15%;
+}
+.textTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 25%;
+  left: 46%;
+}
+.textThree {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  right: 43%;
+  bottom: 20%;
+}
+.textFour {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  right: 20%;
+  bottom: 20%;
+}
+
+.five {
+  color: green;
+  font-weight: bolder;
+}
+
+.furniture {
+  color: black;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+@media (max-width: 988px) {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .one {
+    width: 680px;
+  }
+}
+
+@media (max-width: 568px) {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .wideImg {
+    width: 333px;
+    height: 300px;
+  }
+
+  .thirdImg {
+    width: 333px;
+    height: 300px;
+  }
+
+  .third {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 100%;
+  }
+
+  .margin {
+    margin-bottom: 20px;
+  }
+
+  .wideImg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .textOne {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 25%;
+    left: 15%;
+  }
+  .textTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 25%;
+    left: 46%;
+  }
+  .textThree {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right: 43%;
+    bottom: 20%;
+  }
+  .textFour {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right: 20%;
+    bottom: 20%;
+  }
+
+  .second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .third {
+    display: flex;
+    gap: 15px;
+  }
+}

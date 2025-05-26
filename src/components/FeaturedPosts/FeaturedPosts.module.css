@@ -1,0 +1,57 @@
+.featuredSection {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #fff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.practiceAdvice {
+  display: block;
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.title {
+  color: #252b42;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+.postsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .postsGrid {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .featuredSection {
+    padding: 60px 0;
+  }
+  .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .featuredSection {
+    padding: 40px 0;
+  }
+  .title {
+    font-size: 28px;
+  }
+}

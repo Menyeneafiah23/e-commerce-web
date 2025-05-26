@@ -1,0 +1,27 @@
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.loadMoreButton {
+  background-color: transparent;
+  color: #3498db;
+  border: 1px solid #3498db;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.loadMoreButton:hover {
+  background-color: #3498db;
+  color: white;
+}
+.loadMoreButton:disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}

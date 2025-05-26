@@ -1,0 +1,152 @@
+.section {
+  padding: 80px 0;
+  width: 100%;
+  background-color: #fff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+.testimonialContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 30px;
+}
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #252b42;
+  margin-bottom: 40px;
+  text-align: left;
+  width: 100%;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+}
+.profileImageContainer {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rating {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.star {
+  color: #f3cd03;
+  margin: 0 2px;
+}
+.emptyStar {
+  color: #d9d9d9;
+  margin: 0 2px;
+}
+.testimonialText {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #737373;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 700;
+}
+.userName {
+  color: #23a6f0;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.userRole {
+  color: #252b42;
+  font-weight: 700;
+  font-size: 16px;
+}
+.galleryContainer {
+  width: 50%;
+}
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.galleryItem {
+  overflow: hidden;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.galleryItem img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .heading {
+    text-align: center;
+  }
+  .testimonialContent {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  .galleryContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  .heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+  .heading {
+    font-size: 28px;
+  }
+
+  .userName {
+    font-size: 16px;
+  }
+
+  .userRole {
+    font-size: 14px;
+  }
+  .testimonialText {
+    font-size: 14px;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+}
