@@ -1,4 +1,8 @@
 import styles from "../../components/HeroSection/HeroSection.module.css";
+import heroImage1 from "../../assets/hero image1.svg";
+import heroImage2 from "../../assets/hero image2.svg";
+import heroImage3 from "../../assets/hero image3.svg";
+import heroImage4 from "../../assets/hero image4.svg";
 
 const HeroSection = () => {
   return (
@@ -6,7 +10,7 @@ const HeroSection = () => {
       <div className={styles.heroContainer}>
         <div className={styles.first}>
           <img
-            src="/src/assets/hero image1.svg"
+            src={heroImage1}
             alt="hero image"
             className={` ${styles.wideImg} ${styles.one}`}
           />
@@ -14,18 +18,18 @@ const HeroSection = () => {
 
         <div className={styles.second}>
           <img
-            src="/src/assets/hero image2.svg"
+            src={heroImage2}
             className={`${styles.wideImg} ${styles.margin}`}
             alt="hero image"
           />
           <div className={styles.third}>
             <img
-              src="/src/assets/hero image3.svg"
+              src={heroImage3}
               className={styles.thirdImg}
               alt="hero image"
             />
             <img
-              src="/src/assets/hero image4.svg"
+              src={heroImage4}
               className={styles.thirdImg}
               alt="hero image"
             />

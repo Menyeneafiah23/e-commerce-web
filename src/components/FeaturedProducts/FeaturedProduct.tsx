@@ -1,4 +1,7 @@
 import styles from "./FeaturedProducts.module.css";
+import arrow from "../../assets/Arrow.svg";
+import openBook from "../../assets/open book.svg";
+import upsideDownBook from "../../assets/UpSIdeDown book.svg";
 
 export const FeaturedProducts = () => {
   return (
@@ -15,7 +18,7 @@ export const FeaturedProducts = () => {
           <div className={styles.card}>
             <div className={styles.iconWrapper}>
               <img
-                src="/src/assets/UpSIdeDown book.svg"
+                src={upsideDownBook}
                 alt="UpsideDown book icon"
                 className={styles.icon}
               />
@@ -28,7 +31,7 @@ export const FeaturedProducts = () => {
           <div className={styles.card}>
             <div className={styles.iconWrapper}>
               <img
-                src="/src/assets/open book.svg"
+                src={openBook}
                 alt="Open book icon"
                 className={styles.icon}
               />
@@ -41,11 +44,7 @@ export const FeaturedProducts = () => {
           </div>
           <div className={styles.card}>
             <div className={styles.iconWrapper}>
-              <img
-                src="/src/assets/Arrow.svg"
-                alt="Arrow"
-                className={styles.icon}
-              />
+              <img src={arrow} alt="Arrow" className={styles.icon} />
             </div>
             <h3 className={styles.cardTitle}>Hack Growth</h3>
             <p className={styles.cardDescription}>
